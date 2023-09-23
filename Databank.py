@@ -1,6 +1,6 @@
 user = input("Hello, what can I do for you?\n1 : Add data\n2 : Read your data\n3 : Delete your data\n")
 user = user.lower()
-a = open("Enter the path of the text file here","r")
+a = open("PATH OF FILE","r")
 olddata = a.read()
 a.close()
 
@@ -23,12 +23,12 @@ if user == "1":
         print(f"Added the data")
         r1.close()
 elif user == "2":
-        r = open("C://Users/Preetha/AppData/Local/Programs/Python/Python39/DataBank/data.txt","r")
+        r = open("PATH OF FILE","r")
         print(r.read())
         r.close()
 
 elif user == "3":
-        d = open("Enter the path of the text file here","w")
+        d = open("PATH OF FILE","w")
         d.write("")
         d.close()
         print("Deleted all the data.")
